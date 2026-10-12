@@ -40,7 +40,7 @@ struct UserListView: View {
                                 AsyncImage(url: URL(string: user.image ?? "")) { image in
                                     image
                                         .resizable()
-                                        .aspectRatio(contentMode: .fill)
+                                        .scaledToFill()
                                         .clipShape(.circle)
                                 } placeholder: {
                                     Circle()
