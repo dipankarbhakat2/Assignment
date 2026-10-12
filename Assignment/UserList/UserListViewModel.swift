@@ -21,7 +21,7 @@ final class UserListViewModel {
     var fetcher: () async throws -> UserModel = {
         try await WebService.getUsersData()
     }
-    //Get user API method to get reault
+    // Get user API method to get reault
     func getUsers() async {
         // Begin loading state and reset transient error flags
         isLoading = true
